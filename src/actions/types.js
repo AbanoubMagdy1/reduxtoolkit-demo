@@ -1,0 +1,5 @@
+export const todoTypes = {
+  LOADING_TODOS: 'LOADING_TODOS',
+  SUCCESS_TODOS: 'SUCCESS_TODOS',
+  ERROR_TODOS: 'ERROR_TODOS'
+}

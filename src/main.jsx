@@ -1,13 +1,20 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
-import { RouterProvider } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './index.css'
-import router from './router'
 import store from './store'
+
+import Navbar from './components/Navbar'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
-    <RouterProvider router={router}/>
+    <BrowserRouter >
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<div>Hello world</div>}/>
+        <Route path="/todos" element={<div>Todos</div>}/>
+      </Routes>
+    </BrowserRouter>
   </Provider>
 )

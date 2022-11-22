@@ -11,6 +11,7 @@ const todosReducer = createReducer({ loading: false }, (builder) => {
     .addCase(todoTypes.SUCCESS_TODOS, (state, action) => {
       state.loading = false
       state.data = action.payload
+      state.fetched = true
     })
     .addCase(todoTypes.ERROR_TODOS, (state, action) => {
       // Can still return an immutably-updated value if we want to

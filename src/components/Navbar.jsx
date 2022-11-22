@@ -5,7 +5,6 @@ import Toolbar from '@mui/material/Toolbar'
 import IconButton from '@mui/material/IconButton'
 import Menu from '@mui/material/Menu'
 import MenuIcon from '@mui/icons-material/Menu'
-import Container from '@mui/material/Container'
 import Button from '@mui/material/Button'
 import MenuItem from '@mui/material/MenuItem'
 import { Link } from 'react-router-dom'
@@ -25,8 +24,7 @@ function ResponsiveAppBar () {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar disableGutters style={{ marginLeft: 16 }}>
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
@@ -77,7 +75,6 @@ function ResponsiveAppBar () {
             ))}
           </Box>
         </Toolbar>
-      </Container>
     </AppBar>
   )
 }

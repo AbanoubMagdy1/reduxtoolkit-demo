@@ -10,6 +10,7 @@ export function getTodos () {
   return async function get (dispatch) {
     dispatch({ type: todoTypes.LOADING_TODOS })
     const [res, err] = await handleAsync(getTodosRequest)
+
     if (err) {
       dispatch({ type: todoTypes.ERROR_TODOS, payload: err })
     } else {

@@ -3,3 +3,9 @@ export const todoTypes = {
   SUCCESS_TODOS: 'SUCCESS_TODOS',
   ERROR_TODOS: 'ERROR_TODOS'
 }
+
+export const postTypes = {
+  LOADING_POSTS: 'LOADING_POSTS',
+  SUCCESS_POSTS: 'SUCCESS_POSTS',
+  ERROR_POSTS: 'ERROR_POSTS'
+}
